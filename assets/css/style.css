@@ -50,5 +50,26 @@ main {
 footer {
 	grid-area: footer;
 	background-color: #264143;
-	color: #ffffff;
+	color: #f2ebe9;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.social-icons {
+	display: flex;
+	gap: 10px;
+}
+
+.social-icons i {
+	font-size: 15px;
+	color: #264143;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #eddcd9; /* Color de fondo por defecto (puedes cambiarlo) */
+	/* transition: background-color 0.3s ease; */
 }
