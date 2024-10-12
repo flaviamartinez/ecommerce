@@ -52,8 +52,8 @@ aside h3 {
 }
 
 aside h3:hover {
-	color: #B2456E; /* Cambia el color cuando el mouse está sobre el h3 */
-	cursor: pointer; /* Cambia el cursor al estilo de puntero */
+	color: #B2456E;
+	cursor: pointer;
 }
 
 main {
@@ -75,7 +75,6 @@ article {
 	flex-direction: column;
 	background-color: #ffff;
 	align-items: center;
-	/* border: 2px solid red; */
 }
 
 article h3 {
@@ -91,7 +90,6 @@ article p {
 .product-img{
 	height: 70%;
 	width: auto;
-	/* border: 2px solid green; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -100,13 +98,11 @@ article p {
 .product-img img {
 	max-width: 70%;
 	height: auto;
-	/* border: 2px solid black; */
 }
 
 .product-description {
 	height: 18%;
 	width: 100%;
-	/* border: 1px solid brown; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -121,9 +117,9 @@ article button {
 }
 
 article button:hover {
-	background-color: #B2456E; /* Cambia el color cuando el mouse está sobre el h3 */
+	background-color: #B2456E;
 	color: #ffffff;
-	cursor: pointer; /* Cambia el cursor al estilo de puntero */
+	cursor: pointer;
 }
 
 footer {
@@ -149,6 +145,11 @@ footer {
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
-	background-color: #eddcd9; /* Color de fondo por defecto (puedes cambiarlo) */
-	/* transition: background-color 0.3s ease; */
+	background-color: #eddcd9;
+}
+
+.social-icons i:hover {
+	background-color: #B2456E;
+	color: #ffffff;
+	cursor: pointer;
 }
