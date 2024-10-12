@@ -10,7 +10,7 @@
 	display: grid;
 	min-height: 100vh;
 	grid-template-columns: 1fr 6fr;
-	grid-template-rows: 1fr 6fr 0.5fr;
+	grid-template-rows: 1fr 10fr 0.8fr;
 	grid-template-areas:
 	"nav nav"
 	"aside main"
@@ -45,6 +45,49 @@ aside h3:hover {
 main {
 	grid-area: main;
 	background-color: #eddcd9;
+	padding: 1rem;
+}
+
+.product-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 3fr 3fr;
+	height: 100%;
+	gap: 1.5rem;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	background-color: #ffff;
+	align-items: center;
+	border: 2px solid red;
+}
+
+.product-img{
+	height: 70%;
+	width: auto;
+	border: 2px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.product-img img {
+	max-width: 50%;
+	height: auto;
+}
+
+.product-description {
+	height: 18%;
+	width: 100%;
+	border: 1px solid brown;
+	text-align: center;
+}
+
+article button {
+	width: 100%;
+	height: 12%;
 }
 
 footer {
