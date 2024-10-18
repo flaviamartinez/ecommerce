@@ -8,9 +8,9 @@
 
 .grid-container{
 	display: grid;
-	min-height: 100vh;
-	grid-template-columns: 1fr 6fr;
-	grid-template-rows: 1fr 10fr 0.8fr;
+	height: 100vh;
+	grid-template-columns: 1fr 7fr;
+	grid-template-rows: 1fr 80% 0.8fr;
 	grid-template-areas:
 	"nav nav"
 	"aside main"
@@ -59,15 +59,12 @@ aside h3:hover {
 main {
 	grid-area: main;
 	background-color: #eddcd9;
-	padding: 1rem;
-}
-
-.product-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 3fr 3fr;
-	height: 100%;
-	gap: 1.5rem;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 50%);
+	max-height: 100%;
+	justify-items: center;
+	align-items: center;
 }
 
 article {
@@ -75,6 +72,8 @@ article {
 	flex-direction: column;
 	background-color: #ffff;
 	align-items: center;
+	height: 90%;
+	width: auto;
 }
 
 article h3 {
@@ -93,15 +92,17 @@ article p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0.5rem;
 }
 
 .product-img img {
-	max-width: 70%;
-	height: auto;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; 
 }
 
 .product-description {
-	height: 18%;
+	height: 15%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -114,6 +115,7 @@ article button {
 	height: 12%;
 	border: none;
 	background-color: #f8f4f3;
+	flex-grow: 1;
 }
 
 article button:hover {
