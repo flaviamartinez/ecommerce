@@ -87,7 +87,7 @@ article p {
 }
 
 .product-img{
-	height: 70%;
+	height: 65%;
 	width: auto;
 	display: flex;
 	justify-content: center;
@@ -107,7 +107,20 @@ article p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 0.5rem 0;
 	gap: 0.2rem;
+}
+
+.product-description h3{
+	font-size: 1rem;
+}
+
+.product-description h3{
+	font-size: 2vh;
+}
+
+.product-description p{
+	font-size: 1.8vh;
 }
 
 article button {
@@ -116,6 +129,7 @@ article button {
 	border: none;
 	background-color: #f8f4f3;
 	flex-grow: 1;
+	font-size: 2vh;
 }
 
 article button:hover {
